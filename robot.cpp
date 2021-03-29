@@ -1,10 +1,10 @@
 
-#include "Robot.h"
+#include "robot.h"
 
 /**
  * setup pins
  */
-void Robot::setup() {
+void robot_setup() {
 	pinMode(DRIVER_1_ATTIVAZIONE,OUTPUT);
 
 	pinMode(TRAZIONE_1_DIREZIONE_1,OUTPUT);
@@ -65,6 +65,5 @@ void Robot::setup() {
 	pinMode(ENCODER_3_B,INPUT);
 	pinMode(ENCODER_3_A,INPUT);
 
-}//end setup()
+}//end robot_setup()
 
-#endif
