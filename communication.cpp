@@ -1,8 +1,6 @@
 #include "communication.h"
 #include <Arduino.h>
 
-
-
 /*
  * Funzione di lettura comando dalla seriale bluetooth
  * ritorna 0 se non c'è niente da leggere

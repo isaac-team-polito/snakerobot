@@ -1,4 +1,3 @@
-
 #include "robot.h"
 
 /**
@@ -65,5 +64,8 @@ void robot_setup() {
 	pinMode(ENCODER_3_B,INPUT);
 	pinMode(ENCODER_3_A,INPUT);
 
+  //SENSORI DI CORRENTE DEI TRE MODULI
+  pinMode(CURRENT_SENSOR_1,INPUT);
+  pinMode(CURRENT_SENSOR_2,INPUT);
+  pinMode(CURRENT_SENSOR_3,INPUT);
 }//end robot_setup()
-
