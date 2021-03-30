@@ -1,6 +1,20 @@
 #ifndef definitions_h
 #define definitions_h
 
+
+// - - - PARAMETRI        TODO provvisori
+
+// se abs(lambda)<VELOCITA_MINIMA robot rimane fermo
+// -100<lambda<100
+#define VELOCITA_MINIMA 10
+
+// se abs(nu)<CURVATURA_MINIMA robot rimane fermo
+// -100<nu<100
+#define CURVATURA_MINIMA 10
+
+
+
+
 // - - - PIN - - - 
 
 // - - - MODULO 1 - - - 

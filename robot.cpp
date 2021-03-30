@@ -1,5 +1,35 @@
 #include "robot.h"
 
+/*
+ * lambda e nu compresi tra -100 e +100
+ * 
+ * ritorna 1 se i dati in input stanno nel range corretto
+ * 
+ * salva in vel_trazione, verso_trazione e angolo_imbardata i dati da passare al modulo dei motori
+ */
+int mappa(int lambda,int nu, int *vel_trazione, int *verso_trazione, int *angolo_imbardata) {
+  
+  // se i valori non stanno nel range corretto ritorno -1
+  if(abs(nu) > 100 || abs(lambda) > 100) return(-1);
+
+  // se il valore di velocità sta sotto un limite minimo il robot rimane fermo
+  if(abs(lambda) < VELOCITA_MINIMA) {
+    *vel_trazione = 0;
+
+    // TODO check - rimango nella curvatura precedente o torno a zero?
+    *angolo_imbardata = 0;
+    return(1);
+  }
+  
+  *verso_trazione = (lambda > 0) ? 1 : 0;
+  *vel_trazione = map(abs(lambda),0,100,0,255);
+
+ // if(abs(nu)) < 
+   
+}
+
+
+
 /**
  * setup pins
  */
